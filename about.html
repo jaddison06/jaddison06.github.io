@@ -6,21 +6,23 @@
         <title>about</title>
         <style>
             .bg-img {
-                /* filter: brightness(0.86) saturate(1.08) contrast(1.02); */
-                filter: brightness(0.19) contrast(0.99);
+                filter: brightness(0.86) saturate(1.08) contrast(1.02);
+                /* filter: brightness(0.19) contrast(0.99); */
             }
             .links {
                 margin-bottom: 5vh;
             }
             body p {
                 font-family: 'aref';
-                font-size: 20px;
+                /* font-size: 20px; */
+                font-size: 6.4mm;
             }
             a {
                 color: white;
             }
             h2 {
                 font-family: 'anton';
+                font-size: 9.9mm;
             }
             .numbers {
                 display: flex;
@@ -29,8 +31,8 @@
                 margin-bottom: 4vh;
             }
             .numberC {
-                border-left: 1px white solid;
-                border-right: 1px white solid;
+                border-left: 2px white solid;
+                border-right: 2px white solid;
                 padding-left: 50px;
                 padding-right: 50px;
                 display: flex;
@@ -44,15 +46,24 @@
             .placeiwent h2 {
                 margin-right: 50px;
                 font-size: 24px;
+                font-size: 8.8mm;
             }
             .showlinks {
                 display: flex;
                 width: 66vw;
                 justify-content: space-around;
-                border-top: 1px white solid;
-                border-bottom: 1px white solid;
-                padding-top: 2px;
-                padding-bottom: 9px;
+                border-top: 2px white solid;
+                border-bottom: 2px white solid;
+                padding-top: 23px;
+                padding-bottom: 30px;
+            }
+            .showlink {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .showlink img {
+                width: 210px;
             }
             .showlinks a {
                 font-family: 'aref';
@@ -62,10 +73,12 @@
             .title {
                 padding: 0;
                 margin: 0;
+                font-size: 6.7mm;
             }
             .number {
                 padding: 0;
                 margin: 0;
+                font-size: 6.7mm;
             }
         </style>
     </head>
@@ -113,28 +126,64 @@
             <!-- <br /> -->
             <div class="placeiwent">
                 <h2>| education</h2>
-                <p>Eton College (2019-2024)</p>
-            </div>
-            <p>During my time at Eton I worked in theatre across 4 venues, mainly on lighting but also as stage crew/management, sound design, and in wardrobe and makeup. In that time I was part of nearly 100 shows of all shapes and sizes. In my final year at school I became Keeper Of Lighting, running a department of 100+ crew and overseeing all shows. Additionally I produced multiple live events at school, liasing with staff and managing equipment hire.</p>
-            <div class="showlinks">
-                <a href="/theatre/ladykillers">The Ladykillers</a>
-                <a href="/events/fdemo">F Demo</a>
-                <a href="/theatre/spf">School Play Festival</a>
-            </div>
-            <!-- <br /> -->
-            <div class="placeiwent">
-                <h2>| education</h2>
                 <p>Rose Bruford College (2024-present)</p>
             </div>
             <p>I'm currently studying BA Creative Lighting Control at Rose Bruford, using the 3 years to sharpen my skills and explore new technologies.</p>
             <div class="showlinks">
-                <a href="/events/pyro">"PYRO" (previz)</a>
-                <a href="/theatre/immersive">Immersive Theatre</a>
-                <a href="/screen/quiz">"SoundCheck" Quiz Show</a>
+                <div class="showlink">
+                    <a href="/events/pyro">
+                        <img src="/events/pyro/pyro.png" />
+                    </a>
+                    <a href="/events/pyro">"PYRO" (previz)</a>
+                </div>
+                <div class="showlink">
+                    <a href="/theatre/immersive">
+                        <img src="/theatre/immersive/imm1.png" />
+                    </a>
+                    <a href="/theatre/immersive">Immersive Theatre</a>
+                </div>
+                <div class="showlink">
+                    <a href="/screen/quiz">
+                        <img src="/screen/soundcheck.png" />
+                    </a>
+                    <a href="/screen/quiz">"SoundCheck" Quiz Show</a>
+                </div>
             </div>
-            <br /><br /><br /><br />
+            <div class="placeiwent">
+                <h2>| education</h2>
+                <p>Eton College (2019-2024)</p>
+            </div>
+            <p>During my time at Eton I worked in theatre across 4 venues, mainly on lighting but also as stage crew/management, sound design, and in wardrobe and makeup. In that time I was part of nearly 100 shows of all shapes and sizes. In my final year at school I became Keeper Of Lighting, running a department of 100+ crew and overseeing all shows. Additionally I produced multiple live events at school, liasing with staff and managing equipment hire.</p>
+            <div class="showlinks">
+                <div class="showlink">
+                    <a href="/theatre/ladykillers">
+                        <img src="/theatre/ladykillers/ladykillers1.jpg" />
+                    </a>
+                    <a href="/theatre/ladykillers">
+                        The Ladykillers
+                    </a>
+                </div>
+                <div class="showlink">
+                    <a href="/events/fdemo">
+                        <img src="res/fdemo.png" />
+                    </a>
+                    <a href="/events/fdemo">
+                        F Demo
+                    </a>
+                </div>
+                <div class="showlink">
+                    <a href="/theatre/spf">
+                        <img src="/theatre/spf/spf.jpg" />
+                    </a>
+                    <a href="/theatre/spf">
+                        School Play Festival
+                    </a>
+                </div>
+            </div>
+            <!-- <br /> -->
+            <br /><br /><br /><br /><br /><br />
         </div>
-        <!-- <img class="bg-img" src="res/cover.jpg" /> -->
-        <img class="bg-img" src="res/fdemo.png" />
+        <img class="bg-img" src="res/cover.jpg" />
+        <!-- <img class="bg-img" src="res/fdemo.png" /> -->
     </body>
 </html>

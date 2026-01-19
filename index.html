@@ -14,7 +14,8 @@
                 line-height: 88px;
             }
             .detail {
-                font-size: 24px;
+                /* font-size: 24px; */
+                font-size: 6.8mm;
                 font-family: 'aref';
                 padding: 0;
                 margin: 0;
@@ -23,8 +24,15 @@
                 margin-top: 3vh;
             }
             .bodytext {
-                margin-top: 30vh;
+                margin-top: min(45vw, 30vh); 
             }
+            /* @media screen and (max-width: 768px) {
+                .bodytext {
+                    margin-top: 0vh;
+                    color: blue;
+                    border: 5px white solid;
+                }
+            } */
             .contact {
                 position: absolute;
                 bottom: 10%;

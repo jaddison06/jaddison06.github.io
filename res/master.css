@@ -2,10 +2,16 @@
     font-family: "anton";
     src: url("Anton-Regular.ttf");
 }
+
 @font-face {
     font-family: "aref";
-    src: url("ArefRuqaaInk-Regular.ttf");
+    src: url("Eplilogue-Regular.ttf");
 }
+
+/* @font-face {
+    font-family: "aref";
+    src: url("ArefRuqaaInk-Regular.ttf");
+} */
 
 .bg-img {
     position: fixed;
@@ -38,6 +44,7 @@ body {
 
 .contact a {
     color: white;
+    font-size: 6.2mm;
     /* text-decoration: none; */
 }
 
@@ -60,7 +67,8 @@ body {
     color: white;
     text-decoration: none;
     font-family: 'aref';
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 7.3mm;
     padding: 0px 15px 3px 15px;
     transition: color 165ms, background-color 165ms;
 }

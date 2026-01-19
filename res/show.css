@@ -2,10 +2,16 @@
     font-family: "anton";
     src: url("Anton-Regular.ttf");
 }
+
 @font-face {
     font-family: "aref";
-    src: url("ArefRuqaaInk-Regular.ttf");
+    src: url("Eplilogue-Regular.ttf");
 }
+
+/* @font-face {
+    font-family: "aref";
+    src: url("ArefRuqaaInk-Regular.ttf");
+} */
 
 body {
     background-color: black;
@@ -13,7 +19,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'aref';
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 6.8mm;
 }
 
 .bg-img {
@@ -47,7 +54,7 @@ iframe {
 }
 
 .currentcategory {
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .links img {
@@ -70,7 +77,8 @@ iframe {
     color: white;
     text-decoration: none;
     font-family: 'aref';
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 7.3mm;
     padding: 0px 15px 3px 15px;
     transition: color 165ms, background-color 165ms;
 }

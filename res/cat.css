@@ -2,10 +2,16 @@
     font-family: "anton";
     src: url("Anton-Regular.ttf");
 }
+
 @font-face {
     font-family: "aref";
-    src: url("ArefRuqaaInk-Regular.ttf");
+    src: url("Eplilogue-Regular.ttf");
 }
+
+/* @font-face {
+    font-family: "aref";
+    src: url("ArefRuqaaInk-Regular.ttf");
+} */
 
 .bg-img {
     position: fixed;
@@ -40,10 +46,11 @@ body a {
     width: 66vw;
     padding: 0;
     margin: 0;
+    font-size: 6.8mm;
 }
 
 .currentcategory {
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .cattop {
@@ -66,7 +73,8 @@ body a {
     color: white;
     text-decoration: none;
     font-family: 'aref';
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 7.3mm;
     padding: 0px 15px 3px 15px;
     transition: color 165ms, background-color 165ms;
 }
