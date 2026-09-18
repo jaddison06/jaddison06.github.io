@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes unblur {
+    from { filter: blur(11px); }
+    to {}
+}
+
+body {
+    color: white;
+    background-color: black;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 3.9vmin;
+    
+    height: 84vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+
+    margin-top: 3.4%;
+    margin-left: 9%;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 65%;
+
+    animation-name: fadeIn, unblur;
+    animation-duration: 2.1s, 2.1s;
+    animation-fill-mode: forwards, forwards;
+}
+
+p {
+    margin: 0 0 20px 0;
+    font-weight: 255;
+    font-size: 2.4vmin;
+}
+
+a {
+    color: white;
+    transition: all 0.4s;
+    font-size: 3.1vmin;
+    font-weight: 200;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+a:hover {
+    color: black;
+    background-color: white;
+}

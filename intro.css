@@ -1,0 +1,132 @@
+:root {
+    --start-delay: 2.9s;
+    --sweep-length: 0.13s;
+    --sweep-delay: 0.1s;
+    --pre-fade-delay: 2.69s;
+    --fade-out: 2.1s;
+}
+
+@keyframes containerIn {
+    from { top: -100vh; }
+    to { top: 0; }
+}
+
+@keyframes imageIn {
+    from { top: 100vh; }
+    to { top: 0; }
+}
+
+@keyframes containerOut {
+    from { top: 0; }
+    to { top: 100vh; }
+}
+
+@keyframes imageOut {
+    from { top: 0; }
+    to { top: -100vh; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 100%; }
+    to { opacity: 0%; }
+}
+
+@keyframes fuckOff {
+    from { z-index: 0; }
+    to { z-index: -3; }
+}
+
+@keyframes unblur {
+    from { filter: blur(11px); }
+    to {}
+}
+
+.imgcontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: -100vh;
+}
+.imgcontainer > img {
+    position: relative;
+}
+
+#cover {
+    top: 0;
+    animation-name: containerOut;
+    animation-duration: var(--sweep-length);
+    animation-delay: var(--start-delay);
+    animation-fill-mode: forwards;
+}
+#cover > img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
+    animation-name: imageOut;
+    animation-duration: var(--sweep-length);
+    animation-delay: var(--start-delay);
+    animation-fill-mode: forwards;
+}
+#jtg1 {
+    animation-name: containerIn, containerOut;
+    animation-duration: var(--sweep-length), var(--sweep-length);
+    animation-delay: var(--start-delay), calc(var(--start-delay) + var(--sweep-length) + var(--sweep-delay));
+    animation-fill-mode: forwards, forwards;
+
+    background-color: black;
+}
+#jtg1 > img {
+    animation-name: imageIn, imageOut;
+    animation-duration: var(--sweep-length), var(--sweep-length);
+    animation-delay: var(--start-delay), calc(var(--start-delay) + var(--sweep-length) + var(--sweep-delay));
+    animation-fill-mode: forwards, forwards;
+}
+#jtg2 {
+    animation-name: containerIn, containerOut;
+    animation-duration: var(--sweep-length), var(--sweep-length);
+    animation-delay: calc(var(--start-delay) + var(--sweep-length) + var(--sweep-delay)), calc(var(--start-delay) + (var(--sweep-length) + var(--sweep-delay)) * 2);
+    animation-fill-mode: forwards, forwards;
+
+    background-color: white;
+}
+#jtg2 > img {
+    animation-name: imageIn, imageOut;
+    animation-duration: var(--sweep-length), var(--sweep-length);
+    animation-delay: calc(var(--start-delay) + var(--sweep-length) + var(--sweep-delay)), calc(var(--start-delay) + (var(--sweep-length) + var(--sweep-delay)) * 2);
+    animation-fill-mode: forwards, forwards;
+
+    filter: invert(1);
+}
+
+.intro {
+    z-index: 0;
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+
+    animation-name: fadeOut, fuckOff;
+    animation-duration: var(--fade-out), 0.01s;
+    animation-delay:
+        calc(var(--start-delay) + (var(--sweep-length) + var(--sweep-delay)) * 3 - var(--sweep-delay) + var(--pre-fade-delay)),
+        calc(var(--start-delay) + (var(--sweep-length) + var(--sweep-delay)) * 3 - var(--sweep-delay) + var(--pre-fade-delay) + var(--fade-out));
+    animation-fill-mode: forwards, forwards
+}
+
+.main {
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation-name: unblur;
+    animation-duration: var(--fade-out);
+    animation-delay: calc(var(--start-delay) + (var(--sweep-length) + var(--sweep-delay)) * 3 - var(--sweep-delay) + var(--pre-fade-delay));
+    animation-fill-mode: forwards
+}
