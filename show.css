@@ -1,0 +1,71 @@
+body {
+    color: white;
+    background-color: black;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 3.9vmin;
+    
+    height: 84vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+
+    margin-top: 3.4%;
+    margin-left: 9%;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 65%;
+}
+
+h1 {
+    font-size: 3.5vmin;
+    font-weight: 290;
+    margin: 0;
+}
+h2 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    font-weight: 255;
+    font-size: 3.1vmin;
+}
+
+em {
+    margin-right: 22px;
+    font-size: 2.7vmin;
+}
+
+p {
+    margin: 0;
+    font-weight: 255;
+    font-size: 3.1vmin;
+}
+
+img {
+    margin-top: 25px;
+    width: auto;
+    height: auto;
+    max-width: 30cqmax;
+    max-height: 25cqmax;
+    object-fit: cover;
+}
+
+a {
+    color: white;
+    transition: all 0.4s;
+    font-size: 2.1vmin;
+    font-weight: 200;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-bottom: 4px;
+}
+a:hover {
+    color: black;
+    background-color: white;
+}

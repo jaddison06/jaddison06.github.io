@@ -2,62 +2,78 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="res/master.css" />
+        <script src="onload.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="intro.css" />
         <style>
-            .bg-img {
-                /* filter:brightness(0.4); */
-                filter:brightness(0.6);
-            }
-            .name {
-                font-size: 85px;
-                font-family: 'anton';
-                line-height: 88px;
-            }
-            .detail {
-                /* font-size: 24px; */
-                font-size: 6.8mm;
-                font-family: 'aref';
-                padding: 0;
+            body {
                 margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
             }
-            .links {
-                margin-top: 3vh;
+            .main {
+                display: flex;
+                height: 79vh;
+                width: 65%;
+                flex-direction: column;
+                justify-content: end;
+                padding-left: 9%;
             }
-            .bodytext {
-                margin-top: min(45vw, 30vh); 
+            .main > p {
+                font-family: "Karla", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 240;
+                font-style: normal;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 10px;
+                font-size: 3.9vmin;
             }
-            /* @media screen and (max-width: 768px) {
-                .bodytext {
-                    margin-top: 0vh;
-                    color: blue;
-                    border: 5px white solid;
-                }
-            } */
-            .contact {
+            strong {
+                font-weight: 295;
+            }
+            a {
+                color: white;
+                transition: all 0.4s;
+            }
+            a:hover {
+                color: black;
+                background-color: white;
+            }
+            #bg-img {
                 position: absolute;
-                bottom: 10%;
-                left: 11%;
-                font-family: 'aref';
-                font-size: 18px;
+                top: 0;
+                z-index: -2;
+                object-fit: cover;
+                width: 100vw;
+                height: 100vh;
+                filter: brightness(.14);
             }
         </style>
     </head>
     <body>
-        <div class="bodytext">
-            <span class="name">Jas Addison</span>
-            <p class="detail">is a lighting and visual designer for events, stage and screen.</p>
-            <div class="links">
-                <!-- <a href="/" class="currentcategory"><img src="res/JTG TRANSPARENT.png" /></a> -->
-                <a href="about.html">about</a>
-                <a href="events">events</a>
-                <a href="theatre">theatre</a>
-                <a href="screen">screen</a>
+        <div class="intro">
+            <div class="imgcontainer" id="cover">
+                <img id="coverimg" />
+            </div>
+            <div class="imgcontainer" id="jtg1">
+                <img src="res/JTG FREAKY.png"/>
+            </div>
+            <div class="imgcontainer" id="jtg2">
+                <img src="res/JTG FREAKY.png"/>
             </div>
         </div>
-        <p class="contact">
-            <a href="mailto:j.j.addison@outlook.com">j.j.addison@outlook.com</a> | <a href="tel:07708220060">07708220060</a>
-        </p>
-        <!-- <img src="res/fdemo.png" class="bg-img"/> -->
-        <img src="res/goat.jpg" class="bg-img"/>
+
+        <div class="main">
+            <p><strong>JTG Design</strong> are a world-class multimedia studio based in London.</p>
+            <p>We offer a comprehensive production service, from your initial show concept to on-the-ground support, previsualization and technical direction.</p>
+            <p><a href="shows">Take a look</a> at our events, television and theatre work, or <a href="contact">get in touch</a> with your idea.</p>
+        </div>
+
+        <img id="bg-img" />
     </body>
 </html>
