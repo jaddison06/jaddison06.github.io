@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "anton";
+    src: url("Anton-Regular.ttf");
+}
+
+@font-face {
+    font-family: "aref";
+    src: url("Eplilogue-Regular.ttf");
+}
+
+/* @font-face {
+    font-family: "aref";
+    src: url("ArefRuqaaInk-Regular.ttf");
+} */
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "aref";
+    font-size: 18px;
+}
+
+body a {
+    color: white;
+}
+
+.bodytext {
+    position: absolute;
+    top: 7%;
+    left: 11%;
+    width: 66vw;
+    padding: 0;
+    margin: 0;
+    font-size: 6.8mm;
+}
+
+.currentcategory {
+    border: 2px solid white;
+}
+
+.cattop {
+    margin-bottom: 9vh;
+}
+
+.links {
+    display: flex;
+    margin-bottom: 21vh;
+}
+
+.links img {
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+    height: 33px;
+}
+
+.links a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'aref';
+    /* font-size: 22px; */
+    font-size: 7.3mm;
+    padding: 0px 15px 3px 15px;
+    transition: color 165ms, background-color 165ms;
+}
+.links a:hover {
+    color: black;
+    background-color: white;
+}
